@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[0xff.toBlog()]]></title>
-  <link href="http://os0x.github.com//atom.xml" rel="self"/>
-  <link href="http://os0x.github.com//"/>
-  <updated>2012-04-01T07:32:04+09:00</updated>
-  <id>http://os0x.github.com//</id>
+  <link href="http://os0x.github.com/atom.xml" rel="self"/>
+  <link href="http://os0x.github.com/"/>
+  <updated>2012-04-01T07:41:26+09:00</updated>
+  <id>http://os0x.github.com/</id>
   <author>
     <name><![CDATA[os0x]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Octopressとgithub Pagesを使ったブログ]]></title>
-    <link href="http://os0x.github.com//2012/04/01/new-blog/"/>
+    <link href="http://os0x.github.com/2012/04/01/new-blog/"/>
     <updated>2012-04-01T06:06:00+09:00</updated>
-    <id>http://os0x.github.com//2012/04/01/new-blog</id>
+    <id>http://os0x.github.com/2012/04/01/new-blog</id>
     <content type="html"><![CDATA[<p>はてなダイアリーからの移転先をいくつか検討していたのですが、どれもしっくりこない。。当分放置でいいかなと思いかけていたのですが、ちょうど<a href="http://shogo82148.github.com/blog/2012/03/21/test/">GitHubにブログを設置してみたよ - Shogo&#8217;s Blog</a>が目に入って、GitHubに置くのはよさそうだなぁと思い、試してみたのがこちらになります。</p>
 
 <p>設置については、</p>
