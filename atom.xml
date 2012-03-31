@@ -4,7 +4,7 @@
   <title><![CDATA[0xff.toBlog()]]></title>
   <link href="http://os0x.github.com//atom.xml" rel="self"/>
   <link href="http://os0x.github.com//"/>
-  <updated>2012-04-01T05:59:02+09:00</updated>
+  <updated>2012-04-01T07:02:22+09:00</updated>
   <id>http://os0x.github.com//</id>
   <author>
     <name><![CDATA[os0x]]></name>
@@ -12,5 +12,23 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Octopressとgithub Pagesを使ったブログ]]></title>
+    <link href="http://os0x.github.com//2012/04/01/new-blog/"/>
+    <updated>2012-04-01T06:06:00+09:00</updated>
+    <id>http://os0x.github.com//2012/04/01/new-blog</id>
+    <content type="html"><![CDATA[<p>はてなダイアリーからの移転先をいくつか検討していたのですが、どれもしっくりこない。。当分放置でいいかなと思いかけていたのですが、ちょうど<a href="http://shogo82148.github.com/blog/2012/03/21/test/">GitHubにブログを設置してみたよ - Shogo&#8217;s Blog</a>が目に入って、GitHubに置くのはよさそうだなぁと思い、試してみたのがこちらになります。</p>
+
+<p>設置については、<a href="http://mattn.kaoriya.net/software/lang/ruby/20111017205717.htm">Big Sky :: githubとjekyllとoctopressで作る簡単でモダンなブログ</a>とか、<a href="http://choplin.github.com/blog/2012/01/04/start-octopress/">github pages + octopressはじめました - 分け入ってもコード</a>とか、<a href="http://tokkonopapa.github.com/blog/2011/12/30/octopress-on-github-and-bitbucket/">Octopressのインストールから運用管理まで - T.I.D.</a>とか、<a href="http://blog.glidenote.com/blog/2011/11/07/install-octopress-on-github/">GithubとOctopressでモダンな技術系ブログを作ってみる - Glide Note - グライドノート</a>とか、<a href="http://tokkono.cute.coocan.jp/blog/slow/index.php/programming/github-pages-almost-perfect-guide/">GitHub Pagesホスティングサービス（ほぼ）完全活用ガイド | ゆっくりと…</a>とか、参考になる記事はたくさんあるので、その辺の話は割愛します。</p>
+
+<p>で、なぜ、はてなダイアリーから移転しようとしているのかというと、はてなブログの登場によりダイアリーのほうは後方互換的なアレになってしまったこと、DOCTYPEがアレで互換モードなのはまだいい(いや良くはないけど、今更互換モードとか逆に趣があるというか)としても、文字コードがeuc-jpなのは…みたいな感じです。素直にはてなブログにしてもいいんですが、面白くないよなーということで、辿り着いたのがOctopress + github Pagesといった感じです。</p>
+
+<p>ただ、 Octopress は静的にHTMLを作ったりするところが Movable Type を彷彿させます。はてなダイアリーを使い始める前は Movable Type をレンタルサーバーに設置とかしていた時期がありまして、その頃にブログに書いていたのは Movable Type の設置方法だとか、カスタマイズがどうこうとか、ブログパーツを設置してみたとか、そういった内容ばかりでした。しばらくはそういったことを楽しんでいたのですが、ふと自分のブログの意味のなさに気がついてしまったわけです。
+こういった現象は珍しくなくて、Linuxなどもそういった傾向になりがちだと思います。自由度が高いが故に、そのカスタマイズ自体に時間を取られてしまって、すごく狭い範囲しか見えてなかったといった感じです。<a href="http://0xcc.net/misc/bad-knowhow.html">奥が深い症候群</a>や<a href="http://0xcc.net/blog/archives/000196.html">yak shaving</a>と少し似ています。</p>
+
+<p>で、 Octopress はかなり自由度が高いので、ちょっと警戒しています。うっかりカスタマイズに時間を取られてしまう予感がしています。まあ、今ならその辺を意識してコントロールできそうなので、しばらくは続けてみようかと思っています。</p>
+]]></content>
+  </entry>
   
 </feed>
