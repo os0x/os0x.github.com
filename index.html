@@ -24,6 +24,25 @@
   <script src="/javascripts/modernizr-2.0.js"></script>
   <script src="/javascripts/ender.js"></script>
   <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <script>
+    (function() {
+      var s = document.createElement('script');
+      s.src = 'http://s.hatena.ne.jp/js/HatenaStar.js';
+      s.onload = function () {
+        Hatena.Star.Token = '1a7adda9e00f0d5389d7f40cb4bfc227c657858a';
+        Hatena.Star.SiteConfig = {
+          entryNodes: {
+            '#content article': {
+              uri: '.entry-title a',
+              title: '.entry-title',
+              container: '.entry-title'
+            }
+          }
+        };
+      };
+      document.body.appendChild(s);
+    }());
+  </script>
   <link href="/atom.xml" rel="alternate" title="0xff.toBlog()" type="application/atom+xml">
   <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
 <link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
@@ -259,25 +278,7 @@
   Copyright &copy; 2012 - os0x -
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
-<script>
-  (function() {
-    var s = document.createElement('script');
-    s.src = 'http://s.hatena.ne.jp/js/HatenaStar.js';
-    s.onload = function () {
-      Hatena.Star.Token = '1a7adda9e00f0d5389d7f40cb4bfc227c657858a';
-      Hatena.Star.SiteConfig = {
-        entryNodes: {
-          '#content article': {
-            uri: '.entry-title a',
-            title: '.entry-title',
-            container: '.entry-content'
-          }
-        }
-      };
-    };
-    document.body.appendChild(s);
-  }());
-</script>
+
 </footer>
   
 
