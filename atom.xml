@@ -4,7 +4,7 @@
   <title><![CDATA[0xff.toBlog()]]></title>
   <link href="http://os0x.github.com/atom.xml" rel="self"/>
   <link href="http://os0x.github.com/"/>
-  <updated>2012-04-02T23:35:44+09:00</updated>
+  <updated>2012-04-02T23:36:30+09:00</updated>
   <id>http://os0x.github.com/</id>
   <author>
     <name><![CDATA[os0x]]></name>
@@ -34,7 +34,7 @@
 
 <h3>書き方がある程度統一される</h3>
 
-<p>インデントが半強制的に揃う。またCoffeeScriptを書く場所は実質外部ファイルなので(インラインにCoffeeScriptを書く選択肢もないわけではないRailsだとcoffee-filterとかBaristaとか)、インラインにコードを書かれにくくなる。(まあ、JavaScriptで書いちゃえば元も子もないんだけど)</p>
+<p>インデントが半強制的に揃う。またCoffeeScriptを書く場所は実質外部ファイルなので(インラインにCoffeeScriptを書く選択肢もないわけではない。Railsだとcoffee-filterとかBaristaとか)、インラインにコードを書かれにくくなる。(まあ、JavaScriptで書いちゃえば元も子もないんだけど)</p>
 
 <h2>CoffeeScript のデメリット</h2>
 
