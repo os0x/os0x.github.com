@@ -259,7 +259,25 @@
   Copyright &copy; 2012 - os0x -
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
-
+<script>
+  (function() {
+    var s = document.createElement('script');
+    s.src = 'http://s.hatena.ne.jp/js/HatenaStar.js';
+    s.onload = function () {
+      Hatena.Star.Token = '1a7adda9e00f0d5389d7f40cb4bfc227c657858a';
+      Hatena.Star.SiteConfig = {
+        entryNodes: {
+          '#content article': {
+            uri: '.entry-title a',
+            title: '.entry-title',
+            container: '.entry-content'
+          }
+        }
+      };
+    };
+    document.body.appendChild(s);
+  }());
+</script>
 </footer>
   
 
