@@ -4,7 +4,7 @@
   <title><![CDATA[0xff.toBlog()]]></title>
   <link href="http://os0x.github.com/atom.xml" rel="self"/>
   <link href="http://os0x.github.com/"/>
-  <updated>2012-04-02T23:36:30+09:00</updated>
+  <updated>2012-04-02T23:38:18+09:00</updated>
   <id>http://os0x.github.com/</id>
   <author>
     <name><![CDATA[os0x]]></name>
@@ -48,7 +48,7 @@
 
 <h3>将来的に廃れる可能性がある</h3>
 
-<p>現在、ECMAScript6 とかその先の未来のJavaScriptについて議論が進められており、そこでの CoffeeScript の影響力はすごく大きくなっています。ただ、大きいがゆえに、ECMAScriptが CoffeeScript に近づいていく方向になってきている面があります。というと、CoffeeScript の長所に聞こえるかもしれませんが、実際は CoffeeScript そのものが採用されるわけではないので、 CoffeeScript は ECMAScript に似た中途半端な言語となってしまう可能性が高くなっています。</p>
+<p>現在、ECMAScript6 とかその先の未来のJavaScriptについて議論が進められており、そこでの CoffeeScript の影響力はすごく大きくなっています。ただ、大きいがゆえに、ECMAScriptが CoffeeScript に近づいていく方向になってきている面があります。というと、CoffeeScript の長所に聞こえるかもしれませんが、実際は CoffeeScript そのものが採用されるわけではないので、 CoffeeScript は ECMAScript に似た中途半端な言語となってしまう可能性が高くなっています(というような話をedvakfさんが)。</p>
 
 <h2>メリットでもデメリットでもないあたり</h2>
 
