@@ -13,12 +13,12 @@ var github = (function(){
           url: "https://api.github.com/users/"+options.user+"/repos?callback=?"
         , type: 'jsonp'
         , error: function (err) { $(options.target + ' li.loading').addClass('error').text("Error loading feed"); }
-        , success: function(repositories) {
+        , success: function(data) {
           var repos = [];
-          //if (!data || !data.repositories) { return; }
-          for (var i = 0; i < repositories.length; i++) {
-            if (options.skip_forks && repositories[i].fork) { continue; }
-            repos.push(repositories[i]);
+          if (!data || !data.repositories) { return; }
+          for (var i = 0; i < data.repositories.length; i++) {
+            if (options.skip_forks && data.repositories[i].fork) { continue; }
+            repos.push(data.repositories[i]);
           }
           repos.sort(function(a, b) {
             var aDate = new Date(a.pushed_at).valueOf(),
