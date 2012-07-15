@@ -13,9 +13,10 @@ var github = (function(){
           url: "https://api.github.com/users/"+options.user+"/repos?callback=?"
         , type: 'jsonp'
         , error: function (err) { $(options.target + ' li.loading').addClass('error').text("Error loading feed"); }
-        , success: function(data) {
+        , success: function(res) {
           var repos = [];
-          if (!data || !data.length) { return; }
+          if (!res || !res.data) { return; }
+          var data = res.data;
           for (var i = 0; i < data.length; i++) {
             if (options.skip_forks && data[i].fork) { continue; }
             repos.push(data[i]);
