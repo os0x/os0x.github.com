@@ -13,13 +13,13 @@ var github = (function(){
           url: "https://api.github.com/users/"+options.user+"/repos?callback=?"
         , type: 'jsonp'
         , error: function (err) { $(options.target + ' li.loading').addClass('error').text("Error loading feed"); }
-        , success: function(res) {
+        , success: function(data) {
           var repos = [];
-          if (!res || !res.data) { return; }
-          var data = res.data;
-          for (var i = 0; i < data.length; i++) {
-            if (options.skip_forks && data[i].fork) { continue; }
-            repos.push(data[i]);
+          if (!data || !data.data) { return; }
+          var repositories = res.data;
+          for (var i = 0; i < repositories.length; i++) {
+            if (options.skip_forks && repositories[i].fork) { continue; }
+            repos.push(repositories[i]);
           }
           repos.sort(function(a, b) {
             var aDate = new Date(a.pushed_at).valueOf(),
