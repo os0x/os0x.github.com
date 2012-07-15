@@ -5,7 +5,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>0xff.toBlog()</title>
+  <title>faviconの色をcanvasで変える - 0xff.toBlog()</title>
   <meta name="author" content="os0x">
 
   
@@ -19,7 +19,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://os0x.github.com/">
+  <link rel="canonical" href="http://os0x.github.com/2012/04/16/favicon-on-canvas/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -82,12 +82,9 @@
 </nav>
   <div id="main">
     <div id="content">
-      <div class="blog-index">
+      <div>
+<article class="hentry" role="article">
   
-  
-  
-    <article>
-      
   <header>
     
       <h1 class="entry-title"><a href="/2012/04/16/favicon-on-canvas/">Faviconの色をcanvasで変える</a></h1>
@@ -113,7 +110,7 @@
   </header>
 
 
-  <div class="entry-content"><p>github と github:enterpriseさんのfaviconが見分けがつかないので、Chrome拡張で差し替えることにしました。
+<div class="entry-content"><p>github と github:enterpriseさんのfaviconが見分けがつかないので、Chrome拡張で差し替えることにしました。
 画像どうしようかとちょっと悩んだけど、色変えるだけでいいだろうとFireworksを起動するも、色を良い感じに変える方法がわからない…。</p>
 
 <p>元が <img src="https://github.com/favicon.ico"> の通り、白黒なので、トーンカーブ的なものではダメそうで、諦めてcanvasでやることにしました。</p>
@@ -171,94 +168,16 @@
 
 <p>ほぼ書き終えていた記事があったので、今更ながら公開…。</p>
 </div>
-  
-  
 
 
-    </article>
-  
-  
-    <article>
+  <footer>
+    <p class="meta">
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/2012/04/02/why-coffee/">なぜ CoffeeScript がよいか</a></h1>
-    
-    
-      <p class="meta">
-        
-
-
-
-
-
-
-
-
   
 
+<span class="byline author vcard">Posted by <span class="fn">os0x</span></span>
 
-<time datetime="2012-04-02T21:57:00+09:00" pubdate data-updated="true">Apr 2<span>nd</span>, 2012</time>
-        
-      </p>
-    
-  </header>
-
-
-  <div class="entry-content"><p><a href="http://subtech.g.hatena.ne.jp/cho45/20120402/1333366338">なぜ CoffeeScript がダメか - 冬通りに消え行く制服ガールは✖夢物語にリアルを求めない。 - subtech</a>について。</p>
-
-<p>いや、本当はこのタイトルにするほど CoffeeScript 推しているわけではないのですが、まあそういう建前で書きます。</p>
-
-<h2>CoffeeScript のメリット</h2>
-
-<h3>簡潔に書ける</h3>
-
-<p>簡潔であるということは、ソースコードにおいて、本質ではない部分を書かなくてよいということで、逆に言えば必要なことだけが書かれている状態に近くなります。少し慣れればむしろ読みやすくなる(と思います)。</p>
-
-<h3>JavaScript の罠を回避できる</h3>
-
-<p>var を忘れた変数がグローバル変数になるとか、変数のホイスティングとか、オブジェクトリテラルの最後のカンマとか、 JavaScript の for in は prototype を辿ってしまう問題とか、JavaScript の等価演算子が曖昧すぎて嵌りやすい問題とかとか、 CoffeeScript を使うだけで回避できる問題が結構あります。読む側(レビューする側)としても、注意する部分が少ないのでだいぶ楽になります。</p>
-
-<h3>書き方がある程度統一される</h3>
-
-<p>インデントが半強制的に揃う。また CoffeeScript を書く場所は実質外部ファイルなので(インラインに CoffeeScript を書く選択肢もないわけではない。 Rails だと coffee-filter とか Barista とか)、インラインにコードを書かれにくくなる。(まあ、 JavaScript で書いちゃえば元も子もないんだけど)</p>
-
-<h2>CoffeeScript のデメリット</h2>
-
-<h3>デバッグしにくい</h3>
-
-<p>CoffeeScript のままデバッグできるようになる予定はあるが、今のところ JavaScript として出力されたコードをデバッグすることになる。ある程度長いコードになるとデバッグが大変になってきます。</p>
-
-<h3>記号が多めだけど、中途半端</h3>
-
-<p>-> や => 、 @ など、記号中心と思わせつつ、3項演算子は if ～ then ～ else ～ と書かなければいけなかったりします。3項演算子のイマイチ感は特に強いですね。</p>
-
-<h3>将来的に廃れる可能性がある</h3>
-
-<p>現在、 ECMAScript6 とかその先の未来の JavaScript について議論が進められており、そこでの CoffeeScript の影響力はすごく大きくなっています。ただ、大きいがゆえに、 ECMAScript が CoffeeScript に近づいていく方向になってきています。というと、 CoffeeScript の長所に聞こえるかもしれませんが、実際は CoffeeScript そのものが採用されるわけではないので、 CoffeeScript は ECMAScript に似た中途半端な言語となってしまう可能性が高くなっています(というような話を edvakf さんが)。</p>
-
-<h2>メリットでもデメリットでもないあたり</h2>
-
-<p>個人的にポイントなのは、生成される JavaScript がかなり読みやすくて、比較的きれいな JavaScript が生成されるところにあると思っています。 GWT や Dart がはき出す JavaScript はとても人間が読み書きできるレベルではないですが、 CoffeeScript の生成する JavaScript はその正反対です。なので、デバッグは思ったほど大変ではないし、あとで CoffeeScript をやめたくなったら生成された JavaScript に乗り換えるだけでよいのです。極端なことを言えば、CoffeeScript はプロトタイピングだけに使って、メンテナンスは JavaScript の状態で行う運用だって可能です。</p>
-
-<p>なので、今だからこそ CoffeeScript を触ってみるのがいいんじゃないかと思っています。 ECMAScript6 の先取りもできますしね。正直 CoffeeScript がベストとは思ってませんし、この先 CoffeeScript をやめるかもしれませんが、そのときは書きだした JavaScript をコミットし直すだけです。安心して触ってみましょう。</p>
-</div>
-  
-  
-
-
-    </article>
-  
-  
-    <article>
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/2012/04/01/new-blog/">Octopressとgithub Pagesを使ったブログ</a></h1>
-    
-    
-      <p class="meta">
-        
 
 
 
@@ -270,47 +189,47 @@
   
 
 
-<time datetime="2012-04-01T06:06:00+09:00" pubdate data-updated="true">Apr 1<span>st</span>, 2012</time>
-        
-      </p>
+<time datetime="2012-04-16T16:05:00+09:00" pubdate data-updated="true">Apr 16<span>th</span>, 2012</time>
+      
+
+
+    </p>
     
-  </header>
-
-
-  <div class="entry-content"><p>はてなダイアリーからの移転先をいくつか検討していたのですが、どれもしっくりこない。。当分放置でいいかなと思いかけていたのですが、ちょうど<a href="http://shogo82148.github.com/blog/2012/03/21/test/">GitHubにブログを設置してみたよ - Shogo&#8217;s Blog</a>が目に入って、GitHubに置くのはよさそうだなぁと思い、試してみたのがこちらになります。</p>
-
-<p>設置については、</p>
-
-<ul>
-<li><a href="http://mattn.kaoriya.net/software/lang/ruby/20111017205717.htm">Big Sky :: githubとjekyllとoctopressで作る簡単でモダンなブログ</a></li>
-<li><a href="http://choplin.github.com/blog/2012/01/04/start-octopress/">github pages + octopressはじめました - 分け入ってもコード</a></li>
-<li><a href="http://tokkonopapa.github.com/blog/2011/12/30/octopress-on-github-and-bitbucket/">Octopressのインストールから運用管理まで - T.I.D.</a></li>
-<li><a href="http://blog.glidenote.com/blog/2011/11/07/install-octopress-on-github/">GithubとOctopressでモダンな技術系ブログを作ってみる * Glide Note - グライドノート</a></li>
-<li><a href="http://tokkono.cute.coocan.jp/blog/slow/index.php/programming/github-pages-almost-perfect-guide/">GitHub Pagesホスティングサービス（ほぼ）完全活用ガイド | ゆっくりと…</a></li>
-</ul>
-
-
-<p>などなど、参考になる記事はたくさんあるので、その辺の話は割愛します。</p>
-
-<p>で、なぜ、はてなダイアリーから移転しようとしているのかというと、はてなブログの登場によりダイアリーのほうは後方互換的なアレになってしまったこと、DOCTYPEがアレで互換モードなのはまだいい(いや良くはないけど、今更互換モードとか逆に趣があるというか)としても、文字コードがeuc-jpなのは…みたいな感じです。素直にはてなブログにしてもいいんですが、面白くないよなーということで、辿り着いたのがOctopress + github Pagesといった感じです。</p>
-
-<p>ただ、 Octopress は静的にHTMLを作ったりするところが Movable Type を彷彿させます。はてなダイアリーを使い始める前は Movable Type をレンタルサーバーに設置とかしていた時期がありまして、その頃にブログに書いていたのは Movable Type の設置方法だとか、カスタマイズがどうこうとか、ブログパーツを設置してみたとか、そういった内容ばかりでした。しばらくはそういったことを楽しんでいたのですが、ふと自分のブログの意味のなさに気がついてしまったわけです。
-たぶん、こういった現象は珍しくなくて、Linuxを触ったときもそういった傾向がありました。自由度が高いが故に、そのカスタマイズ自体に時間を取られてしまって、あとで振り返ってみるとすごく狭い範囲しか見えてなかったといった感じです。<a href="http://0xcc.net/misc/bad-knowhow.html">奥が深い症候群</a>や<a href="http://0xcc.net/blog/archives/000196.html">yak shaving</a>と少し似ています。</p>
-
-<p>で、 Octopress はかなり自由度が高いので、ちょっと警戒しています。うっかりカスタマイズに時間を取られてしまう予感がしています。まあ、今ならその辺を意識してコントロールできそうなので、しばらくは続けてみようかと思っています。</p>
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://os0x.github.com/2012/04/16/favicon-on-canvas/" data-via="" data-counturl="http://os0x.github.com/2012/04/16/favicon-on-canvas/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-send="false" data-width="100" data-show-faces="false"></div>
+  
+  
+    <div class="hatena-bookmark">
+      <a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+    </div>
+  
 </div>
-  
-  
 
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/2012/04/02/why-coffee/" title="Previous Post: なぜ CoffeeScript がよいか">&laquo; なぜ CoffeeScript がよいか</a>
+      
+      
+    </p>
+  </footer>
+</article>
 
-    </article>
-  
-  <div class="pagination">
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 </div>
+  </section>
+
+</div>
+
 <aside class="sidebar">
   
     <section>
@@ -335,7 +254,7 @@
 <section>
   <h1>GitHub Repos</h1>
   <ul id="gh_repos">
-    <li class="loading">Status updating&#8230;</li>
+    <li class="loading">Status updating...</li>
   </ul>
   
   <a href="https://github.com/os0x">@os0x</a> on GitHub
@@ -369,6 +288,7 @@
   
 </aside>
 
+
     </div>
   </div>
   <footer role="contentinfo"><p>
@@ -383,7 +303,10 @@
       var disqus_shortname = 'os0x-github';
       
         
-        var disqus_script = 'count.js';
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://os0x.github.com/2012/04/16/favicon-on-canvas/';
+        var disqus_url = 'http://os0x.github.com/2012/04/16/favicon-on-canvas/';
+        var disqus_script = 'embed.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

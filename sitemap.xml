@@ -2,18 +2,22 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>http://os0x.github.com/2012/04/01/new-blog/</loc>
-        <lastmod>2012-04-01T07:25:56+09:00</lastmod>
+        <lastmod>2012-07-15T15:25:20+09:00</lastmod>
     </url>
     <url>
         <loc>http://os0x.github.com/2012/04/02/why-coffee/</loc>
-        <lastmod>2012-04-02T23:42:17+09:00</lastmod>
+        <lastmod>2012-07-15T15:25:20+09:00</lastmod>
+    </url>
+    <url>
+        <loc>http://os0x.github.com/2012/04/16/favicon-on-canvas/</loc>
+        <lastmod>2012-07-15T15:38:44+09:00</lastmod>
     </url>
     <url>
         <loc>http://os0x.github.com/blog/archives/</loc>
-        <lastmod>2012-04-02T23:42:17+09:00</lastmod>
+        <lastmod>2012-07-15T15:38:44+09:00</lastmod>
     </url>
     <url>
         <loc>http://os0x.github.com/</loc>
-        <lastmod>2012-04-02T23:42:17+09:00</lastmod>
+        <lastmod>2012-07-15T15:38:44+09:00</lastmod>
     </url>
 </urlset>
